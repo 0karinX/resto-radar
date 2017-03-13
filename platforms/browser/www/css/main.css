@@ -1,0 +1,190 @@
+.ui-page { 
+	backface-visibility: hidden;
+   -webkit-backface-visibility: hidden; /* Chrome and Safari */
+   -moz-backface-visibility: hidden; /* Firefox */ 
+}
+
+body{
+  overflow:hidden;
+}
+
+@font-face {
+	font-family: Market;
+	src: url("../fonts/Market Fresh.otf") format("opentype");
+}
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
+
+html,
+body, 
+#main, 
+#main-container, 
+#button-wrapper{
+	margin: 	0;
+	padding:	0;
+    height:		100%;
+    width:		100%;
+    display: 	table;
+    background: #E53935;
+}
+
+#other-params-container {
+	text-align: center;
+	margin: 	0 auto 15% auto;
+	max-width: 	60%;
+}
+
+#button-wrapper{
+	width: 			100%;
+	display: 		table-cell;
+ 	vertical-align: middle;
+	height: inherit !important;
+}
+
+#detect-geolocation {
+	margin: 		auto;
+	border: 		8px solid;
+	border-radius: 	50%;
+	height: 		250px;
+	width: 			250px;
+	overflow: 		hidden;
+	vertical-align: middle;
+	background: 	#C62828;
+	box-shadow: 	0 5px #666;
+	color: 			white;
+	font-family:    Market;
+	font-size: 		2.7em;
+	
+}
+
+#search-radius {
+	text-align: center;
+}
+
+.red-btn {
+	background: 	#C62828 !important;
+	color: 			white 	!important;
+	font-family:    Market;
+}
+
+#detect-geolocation span {
+	animation:		scanButtonGlow 3s alternate infinite;
+}
+
+#detect-geolocation:active, .red-btn:active {
+  background-color: #B71C1C;
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
+}
+
+#item-page div.ui-content {
+	color: black;
+}
+
+[data-role="listview"] a {
+	color: 		white !important;
+	background: #F44336 !important;
+}
+
+[data-role="page"] {
+	height:			100% !important;
+    width:			100% !important;
+	color: 			white;
+	font-family:    Market;
+	background: 	white;
+}
+
+[data-role="header"], .type-header {
+	color: 			white !important;
+	font-family:    Market;
+	background: 	#B71C1C !important;
+}
+
+[data-role="footer"] {
+	font-family:    Market;
+	color: 			white !important;
+	background: 	#B71C1C !important;
+}
+
+.ui-popup-container, .ui-popup {
+	height: 85%;
+    max-height: 85%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 10%;
+}
+
+.iframe-container {
+    position: 		relative;
+    padding-bottom: 56.25%;
+    padding-top: 	35px;
+    height: 		0;
+    overflow: 		hidden;
+}
+
+#sms-blast-button,
+#return-to-square-one {
+	margin: 	auto;
+	max-width: 	90% !important;
+}
+
+#sms-sending-monitor {
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+
+#sms-sending-monitor div.done-button-holder{
+	width: 		100%;
+	position: 	absolute;
+	bottom: 	0;
+	left: 		0;
+}
+
+#loading-screen-popup {
+	font-family:    Market;
+	color: 			white !important;
+    background: 	transparent;
+    border: 		0;
+    box-shadow: 	none;
+    vertical-align: middle;
+    display: 		table; 
+    width:			100%;
+}
+
+#loading-screen-popup .text-container { 
+	display: 		table-cell; 
+	vertical-align: middle; 
+}
+
+#loading-screen-popup h1 {
+	text-align: 	center;
+	margin: 		auto;
+	font-size: 		1.8em !important;
+}
+
+.send-success {
+	color: green;
+}
+
+.send-failed {
+	color: orange;
+}
+
+@keyframes scanButtonGlow {
+
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}

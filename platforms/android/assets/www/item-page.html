@@ -1,0 +1,41 @@
+<div data-role="page" id="item-page">
+    <div data-role="header" data-position="fixed">
+        <h1 id="item-page-header-title"></h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+		
+		<p><strong>Address:</strong> <span id="item-page-address"></span></p>
+		<p><strong>Rating:</strong> <span id="item-page-rating"></span></p>
+		<p><strong>Average cost for 2:</strong> <span id="item-page-avg-cost"></span></p>
+
+    <button class="ui-btn ui-corner-all red-btn" id="contacts-open-trigger">Invite Friends</button>
+
+    <img style='width:100%; margin: 10%, 15%;' border="0" alt="no image" id="item-pic-field">
+
+    <div class="popup-wrapper">
+        <div data-history="false" data-position-to="window" data-role="popup" data-icon="delete" data-overlay-theme="b" id="contacts-modal-content">
+          <div class="ui-header ui-bar-inherit type-header">
+              <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+              <h1 class="ui-title" role="heading" aria-level="1">Select Friends</h1>
+          </div><!-- /header -->
+
+          <fieldset data-role="controlgroup" style="overflow: auto; max-height: 75%; ">
+            </fieldset>
+          <button class="ui-btn red-btn ui-corner-all" id="sms-blast-button">Notify Them</button>
+        </div>
+    </div>
+
+  <div data-history="false" data-position-to="window" data-role="popup" data-icon="delete" data-overlay-theme="b" id="sms-sending-monitor">
+      <div class="ui-header ui-bar-inherit type-header">
+          <h1 class="ui-title" role="heading" aria-level="1">Sending...</h1>
+      </div><!-- /header -->
+      <fieldset data-role="controlgroup" style="overflow: auto; max-height: 60%; ">
+      </fieldset>
+      <div class="done-button-holder"></div>
+  </div>
+        
+
+
+    </div><!-- /content -->
+</div><!-- /page -->
