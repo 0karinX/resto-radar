@@ -1,6 +1,6 @@
 var restoRadarConfig = function() {
 
-	var ZOMATO_API_KEY 		= '28cc008e99b959e1c17ee8e2f90ff9f5' // please get your key at zomato.com.. it's free,
+	var ZOMATO_API_KEY 		= '' // please get your key at zomato.com.. it's free,
 		DEFAULT_SEARCH_RAD	= 100, // meters
 		DEFAULT_SEARCH_COUNT= 50,
 		GOOGLE_API_KEY		= '',
